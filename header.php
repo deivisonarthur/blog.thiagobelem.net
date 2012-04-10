@@ -14,12 +14,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/estilo.css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/mobile.css" media="screen and (max-width: 480px)" />
+	<link rel="stylesheet/less" href="<?php bloginfo('template_url') ?>/css/estilo.less" />
+	<link rel="stylesheet/less" href="<?php bloginfo('template_url') ?>/css/mobile.less" media="screen and (max-width: 480px)" />
+
+	<!-- LESS -->
+	<script src="<?php bloginfo('template_url') ?>/js/less-1.3.0.min.js" type="text/javascript"></script>
 
 	<!-- RSS & Atom -->
-	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name') ?> - RSS" href="<?php bloginfo('rss2_url') ?>" />
-	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name') ?> - Atom" href="<?php bloginfo('atom_url') ?>" />
+	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo() ?> - RSS" href="<?php bloginfo('rss2_url') ?>" />
+	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo() ?> - Atom" href="<?php bloginfo('atom_url') ?>" />
 
 	<!-- Author -->
 	<link rel="author" href="https://plus.google.com/108724422355747527461" />
