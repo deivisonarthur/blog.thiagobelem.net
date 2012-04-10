@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes() ?>>
+<html <?php language_attributes() ?> itemscope itemtype="http://schema.org/Blog">
 <head>
 	<meta charset="<?php bloginfo('charset') ?>" />
 	<title><?php wp_title('-', true, 'right'); bloginfo() ?></title>
@@ -32,7 +32,7 @@
 
 	<header class="header">
 		<hgroup>
-			<h1><a href="<?php bloginfo('url') ?>"><?php bloginfo() ?></a></h1>
-			<h2><?php bloginfo('description') ?></h2>
+			<h1 itemprop="name"><a href="<?php bloginfo('url') ?>" itemprop="url"><?php bloginfo() ?></a></h1>
+			<h2 itemprop="description"><?php bloginfo('description') ?></h2>
 		</hgroup>
 	</header>

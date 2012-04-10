@@ -6,13 +6,15 @@
 		while (have_posts()) {
 			the_post();
 		?>
-			<article id="post-<?php the_ID() ?>" <?php post_class() ?>>
-				<header class="title">
-					<h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
-					<time datetime="<?php the_time('c') ?>"><?php the_time(get_option('date_format')) ?></time>
+			<article id="post-<?php the_ID() ?>" <?php post_class() ?> itemscope itemtype="http://schema.org/Article">
+				<header>
+					<h1 itemprop="name"><a href="<?php the_permalink() ?>" itemprop="url"><?php the_title() ?></a></h1>
+					<time datetime="<?php the_time('c') ?>" itemprop="datePublished"><?php the_time(get_option('date_format')) ?></time>
 				</header>
 
-				<?php the_content() ?>
+				<div itemprop="description">
+					<?php the_content() ?>
+				</div>
 			</article>
 		<?php } ?>
 		</section>
