@@ -1,6 +1,7 @@
 <?php get_header() ?>
 
 	<div class="content">
+
 		<section class="main">
 		<?php
 		while (have_posts()) {
@@ -20,6 +21,7 @@
 		</section>
 
 		<?php get_sidebar() ?>
+		
 	</div>
 
 <?php get_footer() ?>
